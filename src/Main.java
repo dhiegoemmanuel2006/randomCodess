@@ -6,16 +6,6 @@ import models.Veiculo;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        Veiculo v = new Veiculo("Duda");
-        Veiculo v2 = new Veiculo("Dhiego");
-        Veiculo v3 = new Veiculo("Dhiulia");
-
-        Veiculo.moreID();
-        System.out.println("Id v2: "+ v2.idCarro);
-        System.out.println("Id mais alto: ");
-        Veiculo.moreID();
-        Veiculo.listAllData(v2);
 
 
 
@@ -30,6 +20,16 @@ public class Main {
 
 
 
+//        Scanner sc = new Scanner(System.in);
+//        Veiculo v = new Veiculo("Duda");
+//        Veiculo v2 = new Veiculo("Dhiego");
+//        Veiculo v3 = new Veiculo("Dhiulia");
+
+//        Veiculo.moreID();
+//        System.out.println("Id v2: "+ v2.idCarro);
+//        System.out.println("Id mais alto: ");
+//        Veiculo.moreID();
+//        Veiculo.listAllData(v2);
 
 
 
@@ -46,7 +46,7 @@ public class Main {
 //        System.out.println("Terra id: " + Terra.idNum + "\nSol id: " + sun.idNum);
 //
 
-        //        TesteProtected pessoa = new TesteProtected();
+//        TesteProtected pessoa = new TesteProtected();
 //        Scanner sc = new Scanner(System.in);
 //
 //
