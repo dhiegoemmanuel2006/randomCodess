@@ -7,11 +7,11 @@ public class Body {
 
     public static long nextID = 0;
 
-    //Construtor
+    //Construtor básico que já recebe um novo id e é "vazio"
     public Body() {
         idNum = nextID++;
     }
-    //Constructor que chama o construtor 1 e ocorre quando ja sabemos o que orbita e seu nome
+    //Constructor que chama o construtor 1 e ocorre quando já sabemos o que orbita e seu nome
 
     public Body(String name, Body orbits) {
         this();
