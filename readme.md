@@ -1,5 +1,5 @@
-:arrow_right:**Códigos aleatórios de JAVA que farei durante meu percurso aprendendo
-programação orientada a objetos com JAVA.**:arrow_left:
+:arrow_right:**Códigos aleatórios de JAVA que farei durante meu percurso aprendendo**:arrow_left:\
+:programação orientada a objetos com JAVA:
 
 :flushed:CLASSES EXPLICAÇÕES::flushed:
 
