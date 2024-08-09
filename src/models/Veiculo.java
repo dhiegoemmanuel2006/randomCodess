@@ -1,13 +1,13 @@
 package models;
 
 public class Veiculo {
-    public double velocidadeAtual; // velocidade em que o carro está
-    public double direcaoAtual; // armazena a direção em graus que o carro seguirá
-    public String nomeDono;  //armazena o nome do carro
+    private double velocidadeAtual; // velocidade em que o carro está
+    private double direcaoAtual; // armazena a direção em graus que o carro seguirá
+    private String nomeDono;  //armazena o nome do carro
 
-    public static long idNextCarro = 1; // número de id que ficará armazenado a classe que será único para cada objeto criado
+    private static long idNextCarro = 1; // número de id que ficará armazenado a classe que será único para cada objeto criado
 
-    public long idCarro; // id do carro que irá receber do idNextCarro
+    private long idCarro; // id do carro que irá receber do idNextCarro
 
     //Constructor vazio que incrementa armazena o próximo id do carro
     public Veiculo() {
@@ -30,4 +30,10 @@ public class Veiculo {
         System.out.println("Id do veiculo: " + printVeiculo.idCarro
         + "\nNome do dono: " + printVeiculo.nomeDono);
     }
+
+    public void setName(String name) {this.nomeDono = name;}
+    public String getNomeDono() {return nomeDono;}
+    public long getIdCarro() {return idCarro;}
+    public void setVelocidadeAtual(double velocidadeAtual) {this.velocidadeAtual = velocidadeAtual;}
+    public void stopCar(){this.velocidadeAtual = 0;}
 }

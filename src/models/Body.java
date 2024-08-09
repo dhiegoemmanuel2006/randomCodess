@@ -1,22 +1,25 @@
 package models;
 
 public class Body {
-    public long idNum;
-    public String name;
-    public Body orbits;
+    private long idNum;
+    private String name;
+    private Body orbits;
 
     public static long nextID = 0;
 
-    //Construtor básico que já recebe um novo id e é "vazio"
-    public Body() {
-        idNum = nextID++;
-    }
-    //Constructor que chama o construtor 1 e ocorre quando já sabemos o que orbita e seu nome
+    //Construtores omissos
 
-    public Body(String name, Body orbits) {
-        this();
-        this.name = name;
-        this.orbits = orbits;
+    public long getID(){return idNum;}
+    public String getName(){return name;}
+    public void setID(String newName){
+        name = newName;
+    }
+    public Body getOrbits(){return orbits;}
+    public void setOrbits(Body orbitsAround) {
+        orbits = orbitsAround;
     }
 
+    public void capture(Body victim) {
+        victim.orbits = this;
+    }
 }
